@@ -169,7 +169,6 @@ impl<'a> AnimalFilter<'a> {
             let mut slices2 = Vec::new();
             for index in 0..length {
                 let animals = &store.store[length][index];
-                // if no animals
                 let mut slices: Vec<&'a [Animal]> = vec![&[]; LETTERS.len()];
                 if animals.is_empty() {
                     continue;
@@ -198,10 +197,7 @@ impl<'a> AnimalFilter<'a> {
         self.store.animals_by_length[length].as_slice()
     }
     fn get_matching_animals(&self, length: usize, index: usize, letter: u8) -> &'a [Animal] {
-        let slices = &self.slices[length - 2];
-        let slices = &slices[index];
-        slices[(letter - FIRST_LETTER) as usize]
-        // self.slices[length - 2][index][(letter - FIRST_LETTER) as usize]
+        self.slices[length - 2][index][(letter - FIRST_LETTER) as usize]
     }
 }
 
@@ -299,8 +295,6 @@ fn main() {
     );
 
     println!("Total: Found {} solutions", solution_counter);
-
-    // println!("{}", animal_filter.get_matching_animals(10, 0, b's').len());
 }
 
 fn solve(
