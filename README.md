@@ -89,7 +89,8 @@ The colored squares gives the final solution (in rainbow order).
 - brute force search via backtracking
 - order crosswords gaps based on BFS on the crossword "graph" to ensure that every gap except the first has at least one letter already filled in (reduces branching factor)
 - use bitvectors to maintain used words
-- queries of the form "all possible word combinations of length $n$ that have letter $x$ at position $i$" are precomputed and stored in a three dimensional lookup table (indexed by $n$, $i$, $x$).
+- for every gap length $n$, all possible word combinations of length $n$ are precomputed and stored in a lookup table
+- queries of the form "all possible word combinations of length $n$ that have letter $x$ at position $i$" are also precomputed and stored in a lookup table (indexed by $n$, $i$, $x$)
 
 
 ## Possible Futures Features
