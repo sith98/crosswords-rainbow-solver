@@ -88,7 +88,7 @@ The colored squares gives the final solution (in rainbow order).
 ## Implemented Features
 - brute force search via backtracking
 - order crosswords gaps based on BFS on the crossword "graph" to ensure that every gap except the first has at least one letter already filled in (reduces branching factor)
-- use bitmasks to store used words
+- use bitvectors to maintain used words
 - queries of the form "all possible word combinations of length $n$ that have letter $x$ at position $i$" are precomputed and stored in a three dimensional lookup table (indexed by $n$, $i$, $x$).
 
 

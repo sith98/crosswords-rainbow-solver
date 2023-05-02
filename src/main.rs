@@ -62,7 +62,6 @@ const LETTERS: std::ops::RangeInclusive<u8> = FIRST_LETTER..=LAST_LETTER;
 use std::{
     ascii::escape_default,
     collections::{HashMap, HashSet},
-    panic::catch_unwind,
 };
 
 pub fn show_buf<B: AsRef<[u8]>>(buf: B) -> String {
