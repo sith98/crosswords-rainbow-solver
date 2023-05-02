@@ -102,13 +102,9 @@ struct Animal {
 
 struct AnimalStore {
     animals_by_length: Vec<Vec<Animal>>,
-    store: Vec<Vec<Vec<Animal>>>,
+    animals_by_length_sorted_by_letter: Vec<Vec<Vec<Animal>>>,
 }
 
-struct AnimalFilter<'a> {
-    store: &'a AnimalStore,
-    slices: Vec<Vec<Vec<&'a [Animal]>>>,
-}
 impl AnimalStore {
     fn new(words: &[&str], max_gap_size: usize) -> Self {
         let mut animals_by_length = Vec::new();
@@ -157,9 +153,14 @@ impl AnimalStore {
             .collect();
         Self {
             animals_by_length,
-            store: animals_by_length_sorted_by_letter,
+            animals_by_length_sorted_by_letter,
         }
     }
+}
+
+struct AnimalFilter<'a> {
+    store: &'a AnimalStore,
+    slices: Vec<Vec<Vec<&'a [Animal]>>>,
 }
 
 impl<'a> AnimalFilter<'a> {
@@ -168,7 +169,7 @@ impl<'a> AnimalFilter<'a> {
         for length in 2..=max_gap_size {
             let mut slices2 = Vec::new();
             for index in 0..length {
-                let animals = &store.store[length][index];
+                let animals = &store.animals_by_length_sorted_by_letter[length][index];
                 let mut slices: Vec<&'a [Animal]> = vec![&[]; LETTERS.len()];
                 if animals.is_empty() {
                     continue;
