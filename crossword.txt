@@ -1,0 +1,71 @@
+ across
+
+3. rabbit
+10. ladybug
+11. batoid
+12. hamster
+13. chicken
+14. skunk
+16. duck
+17. alligator
+18. platypus
+19. peacock
+20. alpaca
+
+down
+
+1. armadillo
+2. cow
+4. snake
+5. zebra
+6. dolphin
+7. raccoon
+8. hedgehog
+9. bat
+12. penguin
+15. dromedary
+
+words
+beetle
+bird
+bread
+chicken
+danger
+dice
+disco
+duck
+fart
+flap
+flap
+floof
+flurry
+formal
+giraffe
+horse
+hot
+land
+leather
+log
+milk
+moose
+mouse
+murder
+ocean
+panda
+pigeon
+piglet
+pony
+potato
+puppy
+radar
+rat
+rope
+sea
+sheep
+spiky
+squirrel
+tank
+thief
+tiger
+trash
+turkey
