@@ -36,17 +36,17 @@ This is a solver for "Crosswords Rainbow", the 7th task of the 1st episode of th
 
 **words**
 ```
-beetle	flap	milk	puppy
-bird	floof	moose	radar
-bread	flurry	mouse	rat
-chicken	formal	murder	rope
-danger	giraffe	ocean	sea
-dice	horse	panda	sheep
-disco	hot	    pigeon	spiky
-duck	land	piglet	squirrel
-fart	leather	pony	tank
-flap	log	    potato	thief
-tiger	trash	turkey	
+beetle  flap    milk    puppy
+bird    floof   moose   radar
+bread   flurry  mouse   rat
+chicken formal  murder  rope
+danger  giraffe ocean   sea
+dice    horse   panda   sheep
+disco   hot     pigeon  spiky
+duck    land    piglet  squirrel
+fart    leather pony    tank
+flap    log     potato  thief
+tiger   trash   turkey    
 ```
 
 ## How to Solve It
